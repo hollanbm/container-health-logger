@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>hollanbm/renovate-config"
+  ],
+  "minimumReleaseAge": "14 days",
+  "packageRules": [
+    {
+      "matchPackageNames": "python-dateutil",
+      "allowedVersions": ">2.9.0"
+    },
+    {
+      "matchPackageNames": "python",
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ],
+      "automerge": false,
+      "dependencyDashboardApproval": true
+    }
+  ]
+}
