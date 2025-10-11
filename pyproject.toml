@@ -1,7 +1,7 @@
 [project]
 requires-python = ">= 3.13"
-name = "container-status-logger"
-description = "logs container status to stdout"
+name = "container-health-logger"
+description = "logs container health to stdout as json"
 authors = [{ name = "Brad Holland", email = "hollanbm@gmail.com" }]
 version = "1"
 dynamic = ["dependencies"]
@@ -12,6 +12,8 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.13"
+docker = "^7.1.0"
+datetime = "^5.5"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.12.0"
