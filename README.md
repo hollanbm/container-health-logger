@@ -7,7 +7,7 @@ example log message:
 {
   "timestamp": "2025-10-11T21:06:37.912244",
   "container": "quirky_lamarr",
-  "status": "unknown"
+  "health": "healthy"
 }
 ```
 
