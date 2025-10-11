@@ -12,3 +12,19 @@ example log message:
 ```
 
 timestamp is ISO8601 format
+
+## docker compose
+```yaml
+services:
+  chl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chl
+    image: ghcr.io/hollanbm/container-health-logger:latest
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: unless-stopped
+```
