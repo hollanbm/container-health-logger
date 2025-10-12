@@ -13,7 +13,9 @@ while True:
             print(
                 json.dumps(
                     {
-                        "timestamp": datetime.datetime.now(datetime.timezone.utc),
+                        "timestamp": datetime.datetime.now(
+                            datetime.timezone.utc
+                        ).isoformat(),
                         "container_name": container.name,
                         "health": container.health,
                     }
