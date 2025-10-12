@@ -13,8 +13,8 @@ while True:
             print(
                 json.dumps(
                     {
-                        "timestamp": datetime.datetime.now().isoformat(),
-                        "container": container.name,
+                        "timestamp": datetime.datetime.now(datetime.timezone.utc),
+                        "container_name": container.name,
                         "health": container.health,
                     }
                 )
